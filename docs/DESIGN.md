@@ -1,13 +1,10 @@
 # LTM Chat: Design Document
 
 **Project:** `langgraph-long-term-memory` (package `ltm_chat`)
-**Source:** `17_longterm-memory-store.ipynb`, rebuilt as a small modular project with a Streamlit frontend
+
 **Status:** v0.2, working demo
 
-> **About the diagrams.** Every diagram in this document is inline Mermaid, not
-> an image file. GitHub and the VS Code Markdown preview render them directly.
-> This is deliberate: a `.png` next to a `.mmd` goes stale the moment the code
-> changes, and nobody notices. Here the source *is* the diagram.
+
 
 ---
 
