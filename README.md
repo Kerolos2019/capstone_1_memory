@@ -12,7 +12,20 @@ The whole idea fits in one table:
 | Holds | the messages of this chat | a profile of facts you stated |
 | Start a new conversation | gone | still there |
 
-![App](docs/screenshots/app-thread2.png)
+What you get on screen:
+
+```
+┌─ sidebar ─────────┬─ chat ─────────────────────┬─ 🔍 memory inspector ──────┐
+│ 👤 User ID    [1] │ 🧑‍💻 I am Sam, I build      │ 🧠 Long-term │ 💬 Short-term│
+│                   │    TaskManager.            │ History │ Store │ Graph     │
+│ 🧵 Conversation   │                            │                            │
+│  ➕ New           │ 🤖 Hi Sam! Happy to help   │ - Name: Sam                │
+│  ▶ I am Sam, ...  │    with TaskManager...     │ - Project: TaskManager     │
+│                   │                            │ 🟢 learned this turn       │
+│ 🎬 Try the demo   │ [ Message the assistant… ] │                            │
+│ 🧹 Reset          │                            │ Messages 2 · Checkpoints 3 │
+└───────────────────┴────────────────────────────┴────────────────────────────┘
+```
 
 ## Run it
 
@@ -131,4 +144,7 @@ LTM_BACKEND=memory streamlit run app.py
 4. **Stop trusting the model.** `update_memory` saves whatever text comes back.
    Make it reject a reply that is suspiciously long or that drops facts.
 
-See [docs/DESIGN.md](docs/DESIGN.md) for the architecture and C4 diagrams.
+See [docs/DESIGN.md](docs/DESIGN.md) for the architecture: C4 diagrams, the data
+model, every design decision and its trade-off, and the extension paths. The
+diagrams there are inline Mermaid, so they render on GitHub and in the VS Code
+Markdown preview without any image files.
